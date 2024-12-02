@@ -6,4 +6,4 @@ const peopleNomes = [
   { nome: "marcos", idade: 23 },
   { nome: "tamires", idade: 76 },
 ];
-console.log(peopleNomes.every((nome) => nome.idade > 10));
+console.log(peopleNomes.every((id) => id.idade > 10));
