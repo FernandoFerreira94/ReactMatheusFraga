@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import { Container } from "../../GlobalStyled";
+
 export default class Horas extends Component {
   constructor(props) {
     super(props);
@@ -15,16 +17,16 @@ export default class Horas extends Component {
   }
 
   componentDidUpdate() {
-    console.log("soma()");
+    //  console.log("soma()");
   }
 
   render() {
     return (
-      <>
+      <Container>
         <h2>Horario</h2>
         <span>{this.state.hora}</span>
         <hr />
-      </>
+      </Container>
     );
   }
 }

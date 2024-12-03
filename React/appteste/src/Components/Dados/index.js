@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import { Container } from "../../GlobalStyled";
+
 export default class Dados extends Component {
   constructor(props) {
     super(props);
@@ -33,15 +35,16 @@ export default class Dados extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h4> {this.state.name}</h4>
-        <h2>Contador</h2>
-        <button onClick={this.aumentar}>+</button>
-        <h3>{this.state.contador}</h3>
-        <button onClick={this.diminuir}>_</button>
-        <ToastContainer />
-        <hr />
-      </div>
+      <Container>
+        <div>
+          <h4> {this.state.name}</h4>
+          <h2>Contador</h2>
+          <button onClick={this.aumentar}>+</button>
+          <h3>{this.state.contador}</h3>
+          <button onClick={this.diminuir}>_</button>
+          <hr />
+        </div>
+      </Container>
     );
   }
 }
