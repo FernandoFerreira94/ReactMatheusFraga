@@ -8,6 +8,7 @@ import Horas from "./Components/Horas";
 import Menbro from "./Components/Menbros";
 import Status from "./Components/Status";
 import Feed from "./Components/Feed";
+import Cadastro from "./Components/Cadastro";
 import Formulario from "./Components/Formulario";
 
 export default class App extends Component {
@@ -19,6 +20,7 @@ export default class App extends Component {
         <Menbro nome="Visitante" />
         <Status />
         <Feed />
+        <Cadastro />
         <Formulario />
         <GlobalStyled />
         <ToastContainer />

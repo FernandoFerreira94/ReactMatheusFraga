@@ -12,7 +12,10 @@ export default createGlobalStyle`
     body{
       background-color: wheat;
     }
-    
+
+    h1, h2, h3,h4, h5 {
+      margin: 5px 0;
+    }    
 
     button {
       display: block;
@@ -42,8 +45,18 @@ export default createGlobalStyle`
       border-bottom: 1px rgb(116,116,116,0.4) solid;
     }
 
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 5px;
+    }
 
-
+    span {
+      margin: 5px 0;
+      display: flex;
+}
 `;
 
 export const Container = styled.section`
