@@ -10,6 +10,7 @@ import Status from "./Components/Status";
 import Feed from "./Components/Feed";
 import Cadastro from "./Components/Cadastro";
 import Formulario from "./Components/Formulario";
+import ApiUseState from "./Components/ApiUseState";
 
 export default class App extends Component {
   render() {
@@ -22,6 +23,7 @@ export default class App extends Component {
         <Feed />
         <Cadastro />
         <Formulario />
+        <ApiUseState />
         <GlobalStyled />
         <ToastContainer />
       </div>
